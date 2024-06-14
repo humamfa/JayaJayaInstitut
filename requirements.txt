@@ -1,0 +1,11 @@
+pandas
+numpy
+scikit-image==0.19.3
+scikit-learn==1.2.2
+sklearn-pandas==2.2.0
+ipython
+six
+pydotplus
+joblib
+seaborn
+matplotlib
