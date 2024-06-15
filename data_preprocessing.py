@@ -69,14 +69,15 @@ def data_preprocessing(data):
     data = data.copy()
     df = pd.DataFrame()
     
-    df["Tuition_fees_up_to_date"] = encoder_Tuition_fees_up_to_date.transform(data["Tuition_fees_up_to_date"])[0]
-    df["Scholarship_holder"] = encoder_Scholarship_holder.transform(data["Scholarship_holder"])[0]
-    df["Debtor"] = encoder_Debtor.transform(data["Debtor"])[0]
-    df["Gender"] = encoder_Gender.transform(data["Gender"])[0]
-    df["Displaced"] = encoder_Displaced.transform(data["Displaced"])[0]
-    df["International"] = encoder_International.transform(data["International"])[0]
-    df["Daytime_evening_attendance"] = encoder_Daytime_evening_attendance.transform(data["Daytime_evening_attendance"])[0]
-    df["Educational_special_needs"] = encoder_Educational_special_needs.transform(data["Educational_special_needs"])[0]
+    df["Daytime_evening_attendance"] = encoder_Daytime_evening_attendance.transform(data["Daytime_evening_attendance"])
+    df["Displaced"] = encoder_Displaced.transform(data["Displaced"])
+    df["Educational_special_needs"] = encoder_Educational_special_needs.transform(data["Educational_special_needs"])
+    df["Debtor"] = encoder_Debtor.transform(data["Debtor"])
+    df["Tuition_fees_up_to_date"] = encoder_Tuition_fees_up_to_date.transform(data["Tuition_fees_up_to_date"])
+    df["Gender"] = encoder_Gender.transform(data["Gender"])
+    df["Scholarship_holder"] = encoder_Scholarship_holder.transform(data["Scholarship_holder"])
+    df["International"] = encoder_International.transform(data["International"])
+    
     
     # PCA 1
     data["Curricular_units_1st_sem_credited"] = scaler_Curricular_units_1st_sem_credited.transform(np.asarray(data["Curricular_units_1st_sem_credited"]).reshape(-1,1))[0]
