@@ -6,7 +6,7 @@ from prediction import prediction
 
 col1, col2 = st.columns([1, 5])
 with col1:
-    st.image("https://static.vecteezy.com/system/resources/thumbnails/012/377/764/small/graduation-line-icon-png.png", width=130)
+    st.image("https://static.vecteezy.com/system/resources/thumbnails/012/377/764/small/graduation-line-icon-png.png", width=55)
 with col2:
     st.header('Students Performance App (Prototype)')
 
