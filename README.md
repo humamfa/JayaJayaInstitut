@@ -58,6 +58,7 @@ python data_preprocessing.py
 python prediction.py
 streamlit run students_performance_app.py
 ```
+Dapat juga dibuka melalui Streamlit: https://studentsperformanceapp.streamlit.app
 
 ## Conclusion
 - Mahasiswa yang dropout memiliki rata-rata nilai yang jauh lebih rendah dibandingkan dengan mahasiswa yang graduate, baik di semester 1 maupun semester 2.
